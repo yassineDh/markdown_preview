@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Editor from "./components/Editor";
+import Preview from "./components/Preview";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid AppBackground ">
+      <div className="row justify-content-center align-items-center py-5">
+        <Editor />
+      </div>
+      <div className="row justify-content-center align-items-center">
+        <Preview />
+      </div>
     </div>
   );
 }
